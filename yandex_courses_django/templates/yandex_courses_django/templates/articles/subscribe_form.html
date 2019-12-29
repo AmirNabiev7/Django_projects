@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My training project</title>
+</head>
+<body>
+    <form action="{{ where }}" method="post">{% csrf_token %}
+        Введите имя автора и ваш email<br><br>
+        Имя автора: <input type="text" name="author"><br><br>
+        Ваш email: <input type="text" name="email"><br><br>
+        <input type="submit" value="Подписаться">
+    </form>
+
+</body>
+</html>
